@@ -1,0 +1,64 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.key {
+  /*background-color: #ddd;*/
+  /*font-family: "Lucida Console", Monaco, monospace;*/
+  font-size: 12px;
+  border-top: 1px solid #ddd;
+  margin-top: 1em;
+  padding-top: 3px;
+}
+
+
+#skills {
+  position: relative;
+}
+
+#skills div {
+  /*float: left;*/
+  margin: 2px;
+  /*position: relative;*/
+  /*position: absolute;*/
+  /*display: inline-block;*/
+  /*color: #fff;*/
+  /*text-shadow: 0px 0px 2px green;*/
+  cursor: default;
+  /*display: inline-block;*/
+}
+
+/*
+.framework {
+  text-shadow: 0px 0px 2px red;
+}
+
+.environment {
+  text-shadow: 0px 0px 2px green;
+}
+
+.db {
+  text-shadow: 0px 0px 2px purple;
+}
+
+.server {
+  text-shadow: 0px 0px 2px blue;
+}
+
+.language {
+  text-shadow: 0px 0px 2px orange;
+}
+
+.technology {
+  text-shadow: 0px 0px 2px black;
+}
+
+.scm {
+  text-shadow: 0px 0px 2px gray;
+}
+*/

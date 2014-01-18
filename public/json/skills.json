@@ -1,0 +1,152 @@
+[
+    {
+        "tech": "Express",
+        "skill": 3,
+        "interest": 10,
+        "type": "framework"
+    },
+    {
+        "tech": "JavaScript",
+        "skill": 9,
+        "interest": 10,
+        "type": "language"
+    },
+    {
+        "tech": "Node.js",
+        "skill": 3,
+        "interest": 10,
+        "type": "server"
+    },
+    {
+        "tech": "Terminal",
+        "skill": 5,
+        "interest": 9,
+        "type": "environment"
+    },
+    {
+        "tech": "MongoDB",
+        "skill": 2,
+        "interest": 8,
+        "type": "db"
+    },
+    {
+        "tech": "Backbone.js",
+        "skill": 6,
+        "interest": 8,
+        "type": "framework"
+    },
+    {
+        "tech": "AngularJS",
+        "skill": 1,
+        "interest": 8,
+        "type": "framework"
+    },
+    {
+        "tech": "Git",
+        "skill": 6,
+        "interest": 8,
+        "type": "scm"
+    },
+    {
+        "tech": "Linux",
+        "skill": 6,
+        "interest": 7,
+        "type": "environment"
+    },
+    {
+        "tech": "Sass",
+        "skill": 6,
+        "interest": 7,
+        "type": "framework"
+    },
+    {
+        "tech": "jQuery UI",
+        "skill": 6,
+        "interest": 6,
+        "type": "framework"
+    },
+    {
+        "tech": "jQuery",
+        "skill": 8,
+        "interest": 6,
+        "type": "framework"
+    },
+    {
+        "tech": "RoR",
+        "skill": 2,
+        "interest": 7,
+        "type": "framework"
+    },
+    {
+        "tech": "JSLint",
+        "skill": 7,
+        "interest": 5,
+        "type": "technology"
+    },
+    {
+        "tech": "ExtJS",
+        "skill": 9,
+        "interest": 5,
+        "type": "framework"
+    },
+    {
+        "tech": "Underscore.js",
+        "skill": 6,
+        "interest": 5,
+        "type": "framework"
+    },
+    {
+        "tech": "Twitter Bootstrap",
+        "skill": 6,
+        "interest": 5,
+        "type": "framework"
+    },
+    {
+        "tech": "JsDuck",
+        "skill": 8,
+        "interest": 4,
+        "type": "framework"
+    },
+    {
+        "tech": "Require.js",
+        "skill": 6,
+        "interest": 4,
+        "type": "framework"
+    },
+    {
+        "tech": "MySQL",
+        "skill": 6,
+        "interest": 3,
+        "type": "db"
+    },
+    {
+        "tech": "YUIDoc",
+        "skill": 7,
+        "interest": 2,
+        "type": "framework"
+    },
+    {
+        "tech": "Perforce",
+        "skill": 6,
+        "interest": 2,
+        "type": "scm"
+    },
+    {
+        "tech": "PHP",
+        "skill": 6,
+        "interest": 2,
+        "type": "server"
+    },
+    {
+        "tech": "CodeIgniter",
+        "skill": 5,
+        "interest": 1,
+        "type": "framework"
+    },
+    {
+        "tech": "Heroku",
+        "skill": 3,
+        "interest": 7,
+        "type": "server"
+    }
+]
