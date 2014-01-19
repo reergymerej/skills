@@ -1,12 +1,33 @@
 extends layout
 
 block content
+  div.row-fluid
 
-  div.key
-    div
-      span skill = 
-        span.skill size
-    div
-      span opacity = 
-        span.interest interest
-  div#skills
+    div.span3 
+
+      div.row-fluid
+        div.span12.muted.text-right
+          div
+            small skill = size
+          div
+            small interest = opacity
+          div
+            small * 
+              a(href='https://github.com/reergymerej/skills') used here
+            
+      div.row-fluid
+        div.span12
+          form.form-horizontal.pull-right
+            div.control-group
+              div.controls
+                select#sortBy.input-small
+                  option(value="interest") interest
+                  option(value="skill") skill
+                  option(value="tech") name
+                label.checkbox
+                  input#descending(type="checkbox", checked="checked")
+                  |descending
+      
+    
+    div.span9
+      div#skills

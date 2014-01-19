@@ -2,58 +2,66 @@ $(function () {
   $.get('/json/skills.json', function (skills) {
     var $container = $('#skills');
 
-    skills.sort(function (a, b) {
-      var attribute = 'interest',
-        dir = 0;
 
-      if (a[attribute] < b[attribute]) {
-        dir = 1;
-      } else if (b[attribute] < a[attribute]) {
-        dir = -1;
-      } else {
-        dir = (a.tech < b.tech) ? -1 : 1;
-      }
-      return dir;
-    });
+    // sortBy('skill');
+    // sortBy('tech', 'asc');
+    // sortBy('type', 'asc');
 
-    // function getSkill(tech) {
-    //   var foundSkill;
-    //   $.each(skills, function (i, skill) {
-    //     if (skill.tech === tech) {
-    //       foundSkill = skill;
-    //       return false;
-    //     }
-    //   });
-    //   return foundSkill;
-    // }
 
-    // function showStats(skill) {
-    //   $('.skill').html(skill.skill);
-    // }
+    function sortBy(attribute) {
+      
+      var descending = $('#descending').prop('checked') ? -1 : 1;
+      attribute = attribute || $('#sortBy').val();
+
+      skills.sort(function (a, b) {
+        var dir = 0,
+          x = a[attribute],
+          y = b[attribute];
+
+        if (typeof x === 'string') {
+          x = x.toLowerCase();
+          y = y.toLowerCase();
+        }
+
+        if (x < y) {
+          dir = -1;
+        } else if (y < x) {
+          dir = 1;
+        } else {
+          dir = (a.tech < b.tech) ? -1 : 1;
+        }
+        return dir * descending;
+      });
+
+      $container.empty();
+      $.each(skills, createSkill);
+    }
 
     function createSkill (i, skill) {
-      var $div = $('<div />', {
-        html: skill.tech,
-        css: {
-          // fontSize: (1 + skill.skill / 10) + 'em',
-          fontSize: (10 + skill.skill * 3) + 'px',
-          opacity: skill.interest / 10
-        },
-        class: skill.type
-      });
-
-      $div.hover(
-        function () {
-          var skill = getSkill($(this).html());
-          showStats(skill);
-        },
-        function () {
-
-      });
+      var fontSize = (10 + skill.skill * 3),
+        $div = $('<div />', {
+          html: skill.tech,
+          css: {
+            lineHeight: fontSize * .9 + 'px',
+            paddingLeft: fontSize + 'px',
+            letterSpacing: skill.skill + 'px',
+            fontSize: fontSize + 'px',
+            opacity: skill.interest / 10
+          },
+          class: skill.type
+        });
 
       $container.append($div);
     }
 
-    $.each(skills, createSkill);
+    $('#sortBy').change(function () {
+      sortBy($(this).val());
+    }).focus();
+
+    $('#descending').change(function () {
+      sortBy();
+    });
+
+    sortBy('interest');
   });
 });

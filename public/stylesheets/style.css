@@ -1,27 +1,15 @@
-body {
+/*body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
 }
+*/
 
-.key {
-  width: 120px;
-  position: fixed;
-  top: 1em;
-  left: 10px;
-  text-align: center;
-  border-color: #ddd;
-  border-style: solid;
-  border-width: 1px 0;
-  font-size: 12px;
-}
-
-#skills {
-  margin-left: 150px;
-  margin-top: 14px;
-  position: relative;
+body {
+  margin-top: .7em;
+  
 }
 
 #skills div {
@@ -29,10 +17,10 @@ a {
   cursor: default;
 }
 
-/*#skills div:hover {
+#skills div:hover {
   text-shadow: 0 0 2px rgb(66, 27, 85);
   color: #fff;
-}*/
+}
 
 /*
 .framework {

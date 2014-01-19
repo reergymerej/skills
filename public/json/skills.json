@@ -1,24 +1,24 @@
 [
     {
-        "tech": "Express",
+        "tech": "Express*",
         "skill": 3,
         "interest": 10,
         "type": "framework"
     },
     {
-        "tech": "JavaScript",
+        "tech": "JavaScript*",
         "skill": 9,
         "interest": 10,
         "type": "language"
     },
     {
-        "tech": "Node.js",
+        "tech": "Node.js*",
         "skill": 3,
         "interest": 10,
         "type": "server"
     },
     {
-        "tech": "Terminal",
+        "tech": "Terminal*",
         "skill": 5,
         "interest": 9,
         "type": "environment"
@@ -42,13 +42,13 @@
         "type": "framework"
     },
     {
-        "tech": "Git",
+        "tech": "Git*",
         "skill": 6,
         "interest": 8,
         "type": "scm"
     },
     {
-        "tech": "Linux",
+        "tech": "Linux*",
         "skill": 6,
         "interest": 7,
         "type": "environment"
@@ -66,7 +66,7 @@
         "type": "framework"
     },
     {
-        "tech": "jQuery",
+        "tech": "jQuery*",
         "skill": 8,
         "interest": 6,
         "type": "framework"
@@ -75,10 +75,10 @@
         "tech": "RoR",
         "skill": 2,
         "interest": 7,
-        "type": "framework"
+        "type": "server"
     },
     {
-        "tech": "JSLint",
+        "tech": "JSLint*",
         "skill": 7,
         "interest": 5,
         "type": "technology"
@@ -96,7 +96,7 @@
         "type": "framework"
     },
     {
-        "tech": "Twitter Bootstrap",
+        "tech": "Twitter Bootstrap*",
         "skill": 6,
         "interest": 5,
         "type": "framework"
@@ -144,9 +144,27 @@
         "type": "framework"
     },
     {
-        "tech": "Heroku",
+        "tech": "Heroku*",
         "skill": 3,
         "interest": 7,
         "type": "server"
+    },
+    {
+        "tech": "Java",
+        "skill": 5,
+        "interest": 4,
+        "type": "server"
+    },
+    {
+        "tech": "npm*",
+        "skill": 3,
+        "interest": 7,
+        "type": "environment"
+    },
+    {
+        "tech": "jade*",
+        "skill": 6,
+        "interest": 8,
+        "type": "framework"
     }
 ]
